@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: rgba(192, 192, 192, 0.1);
+}
+
+aside{
+  position: fixed;
+  width: 200px;
+  border-right: 1px;
+  border-right-color: rgba(0, 173, 238, 0.4);
+  border-right-style: solid;
+  height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+aside > img{
+  height: 120px;
+  display: block;
+  margin: 0 auto;
+}
+
+ul > li{
+  list-style: none;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 173, 238, 0.4); 
+  width: 80%;
+  text-transform: uppercase;
+  margin: 10px auto;
+  padding-bottom: 10px;
+  line-height: 20px;
+ 
+}
+
+li > a{
+  text-decoration: none;
+  font-weight: bold;
+  color: rgba(0, 173, 238, 0.4);
+}
+a:hover{
+  text-decoration: underline;
+}
+main{
+  margin-left: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+header{
+  height: 120px;
+}
+header > img{
+  height: 80%;
+}
+main > img{
+  display: block;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+section > div {
+  width: 33%;
+  padding-right: 20px;
+  margin-top: 20px;
+  display: inline-block;
+
+}
+
+div > h2{
+  color: rgba(170, 239, 135, 0.8);
+}
+h2 > i{
+  margin-right: 10px;
+}
+
+#what-we-do,
+#our-work {
+  border-right: solid 1px rgba(170, 239, 135, 0.8);
+  
+  }
+
+  #our-work,
+  #contact-us{
+   padding-left: 20px; 
+  }
+

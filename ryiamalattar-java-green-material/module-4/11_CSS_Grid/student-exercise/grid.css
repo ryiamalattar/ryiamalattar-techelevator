@@ -1,0 +1,119 @@
+#main-grid{
+    grid-area: main;
+    
+}
+
+#experience-grid{
+    grid-area: experiencegrid;
+}
+
+#headline{
+    grid-area: mainheadline;
+    align-items: center;
+}
+
+#student-picture{
+    grid-area: mainpicture; 
+    text-align: center;
+}
+#student-quote{
+    grid-area: mainquote;
+    align-items: center;
+}
+ #student-profile{
+    grid-area: mainprofile;
+    align-items: center;
+ }
+
+ #student-contact{
+    grid-area: maincontact; 
+    text-align: center;
+ }
+
+ #experience-code{
+    grid-area: experiencecode;
+ }
+
+ #experience-database{
+    grid-area: experiencedatabase;
+ }
+ #experience-web{
+    grid-area: experienceweb;
+ }
+ #experience-design{
+    grid-area: experiencedesign;
+ }
+
+ #main-grid{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-areas: 
+ "mainheadline mainheadline mainpicture"
+ "mainquote mainquote mainpicture"
+ "mainprofile mainprofile maincontact"
+ "experiencegrid experiencegrid experiencegrid";
+
+ grid-row-gap: 20px;
+ grid-column-gap: 50px; 
+ }
+
+ 
+ #experience-grid{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-areas:
+     "experiencecode experiencecode"
+     "experiencedatabase experiencedatabase"
+     "experienceweb experiencedesign";
+     grid-row-gap: 20px;
+     grid-column-gap: 50px;
+ }
+ 
+ @media (max-width: 1024px) {
+    #main-grid{
+    grid-template-areas: 
+    "mainheadline mainheadline"
+    "mainquote mainpicture"
+    "mainquote maincontact"
+    "mainprofile mainprofile"
+    "experiencegrid experiencegrid";
+    column-gap: 35px;
+    row-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+
+    }
+ }
+ @media (max-width: 1024px){
+
+    #experience-grid{
+    grid-template-areas:
+    "experiencecode experienceweb"
+    "experiencedatabase experiencedesign";
+     grid-row-gap: 20px;
+     grid-column-gap: 20px;
+     grid-template-columns: 1fr 1fr;
+    }
+ }
+
+ @media (max-width: 450px) {
+    #main-grid{
+    grid-template-areas: 
+    "mainheadline"
+    "mainpicture"
+    "mainquote"
+    "maincontact"
+    "mainprofile"
+    "experiencegrid";
+    grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 450px) {
+    #experience-grid{
+    grid-template-areas: 
+    "experiencecode"
+    "experienceweb"
+    "experiencedatabase"
+    "experiencedesign";
+    grid-template-columns: 1fr;
+    }
+}
